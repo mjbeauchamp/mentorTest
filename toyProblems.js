@@ -1,12 +1,17 @@
 //JS Basics
 //Run npm test in the command line to test your solutions
 module.exports = {
-  // reverseIt:
+  reverseIt: function(string){
+    let newString = string.split("").reverse().join("");
+    return newString;
+  },
 
   //uncomment and finish the reverseIt function. It will take in one parameter which is a String and
   //reverse it
 
-  // removeDups:
+  removeDups: function(arr){
+
+  }
 
   //uncomment and finish the removeDups function. It will take in one parameter which is an Array
   //remove all duplicates
