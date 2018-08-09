@@ -17,12 +17,22 @@ module.exports = {
       }
     });
     return newArr;
-  }
+  },
 
   //uncomment and finish the removeDups function. It will take in one parameter which is an Array
   //remove all duplicates
 
-  // titleIt:
+  titleIt: function(string){
+    let titleArray = [];
+    let newArr = string.split(" ");
+    for(let i = 0; i < newArr.length; i++){
+      let wordArr = newArr[i].split("");
+      wordArr[0] = wordArr[0].toUpperCase();
+      let newWord = wordArr.join("")
+      titleArray.push(newWord); 
+    }
+    return titleArray.join(" ");
+  }
 
   //uncomment and finish the titleIt function. It will take in one parameter which is a String and
   //capitalize the first letter of each word
