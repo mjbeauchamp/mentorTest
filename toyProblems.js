@@ -65,7 +65,7 @@ module.exports = {
     }
 
     return primeNum;
-  }
+  },
 
   //uncomment and finish the isPrime function. It will take in one parameter which is a Number and
   //return true if it is prime and false if it is not
@@ -74,7 +74,7 @@ module.exports = {
   //var foo = 10 + '20';
   //uncomment the foo property and give your answer as its value
 
-  //foo:
+  foo: '1020',
 
   //what is the outcome of the two console.logs below?
   //   var foo = "Hello";
@@ -85,6 +85,6 @@ module.exports = {
   // console.log(foo + bar);
   // uncomment the log1 and log2 properties and give your answers as their values
 
-  // log1:
-  // log2:
+  log1: "Hello World",
+  log2: undefined
 }
