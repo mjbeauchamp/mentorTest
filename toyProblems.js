@@ -32,12 +32,22 @@ module.exports = {
       titleArray.push(newWord); 
     }
     return titleArray.join(" ");
-  }
+  },
 
   //uncomment and finish the titleIt function. It will take in one parameter which is a String and
   //capitalize the first letter of each word
 
-  // vowelCounter:
+  vowelCounter: function(string){
+    let count = 0;
+    let vowels = ["a", "e", "i", "o", "u"]
+    let strArr = string.split("");
+    strArr.forEach(val => {
+      if(vowels.indexOf(val) !== -1){
+        count++;
+      }
+    })
+    return count;
+  }
 
   //uncomment and finish the vowelCounter function. It will take in one parameter which is a String and
   //return the number of vowels in the string
