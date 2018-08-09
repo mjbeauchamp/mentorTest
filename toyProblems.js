@@ -10,7 +10,13 @@ module.exports = {
   //reverse it
 
   removeDups: function(arr){
-
+    let newArr = [];
+    arr.forEach(val => {
+      if(newArr.indexOf(val) === -1){
+        newArr.push(val)
+      }
+    });
+    return newArr;
   }
 
   //uncomment and finish the removeDups function. It will take in one parameter which is an Array
