@@ -47,12 +47,25 @@ module.exports = {
       }
     })
     return count;
-  }
+  },
 
   //uncomment and finish the vowelCounter function. It will take in one parameter which is a String and
   //return the number of vowels in the string
 
-  // isPrime:
+  isPrime: function(number){
+    let primeNum = true;
+    if(number < 0){
+      primeNum = false;
+    } else {
+      for(let i = 2; i < number; i++){
+        if(number % i === 0){
+          primeNum = false;
+        }
+      }
+    }
+
+    return primeNum;
+  }
 
   //uncomment and finish the isPrime function. It will take in one parameter which is a Number and
   //return true if it is prime and false if it is not
